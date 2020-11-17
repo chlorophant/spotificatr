@@ -1,0 +1,35 @@
+{
+  "name": "spotificatr-ui",
+  "version": "1.0.0",
+  "description": "App for recording spotify playlist notes",
+  "main": "index.js",
+  "scripts": {
+    "lint": "standard src/*.jsx --fix",
+    "start": "NODE_ENV=local parcel src/index.html --no-cache",
+    "build": "NODE_ENV=production parcel build src/index.html --no-cache",
+    "test": "npm run lint"
+  },
+  "repository": "https://github.com/chlorophant/spotificatr",
+  "author": "Cory Maloy",
+  "license": "ISC",
+  "dependencies": {
+    "@material-ui/core": "^4.9.1",
+    "@material-ui/icons": "^4.9.1",
+    "eslint-config-standard-jsx": "^8.1.0",
+    "material-ui-flat-pagination": "^4.1.0",
+    "prop-types": "^15.7.2",
+    "query-string": "^6.10.1",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-router-dom": "^5.1.2",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.5"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/preset-react": "^7.8.3",
+    "parcel-bundler": "^1.12.4",
+    "standard": "^14.3.1"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "name": "spotificatr-service",
+  "version": "1.0.0",
+  "description": "App for recording spotify playlist notes",
+  "main": "index.js",
+  "scripts": {
+    "lint": "standard src/*.jsx --fix",
+    "start": "CONFIG_ENV=local source ./config/local-env.sh && ./config/start.sh"
+  },
+  "repository": "https://github.com/chlorophant/spotificatr",
+  "author": "Cory Maloy",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "bunyan": "^1.8.12",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.24.0",
+    "morgan": "^1.9.1",
+    "pg": "^7.18.1",
+    "pm2": "^4.2.3",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.5",
+    "sequelize": "^5.21.3",
+    "sequelize-cli": "^5.5.1"
+  },
+  "devDependencies": {
+    "standard": "^14.3.4"
+  }
+}

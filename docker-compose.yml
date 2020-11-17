@@ -1,0 +1,33 @@
+version: '3.8'
+services:
+  spotificatr-ui:
+    build:
+      context: ./spotificatr-ui
+      dockerfile: Dockerfile
+    depends_on:
+      - spotificatr-service
+    ports:
+      - '8080:8080'
+  spotificatr-service:
+    build:
+      context: ./spotificatr-service
+      dockerfile: Dockerfile
+    environment:
+      CONFIG_ENV: local
+    depends_on:
+      - db
+    ports:
+      - '8443:8443'
+    command: [
+      "config/wait-for-it.sh",
+      "db:5432",
+      "--",
+      "npm",
+      "start"
+    ]
+  db:
+    image: muccg/postgres-ssl:10.6
+    environment:
+      POSTGRES_DB: spotificatr_db_local
+      POSTGRES_USER: spotificatr_user
+      POSTGRES_PASSWORD: verysecret123
