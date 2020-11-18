@@ -43,7 +43,7 @@ want to pass sensitive data through a third party.
  
 ## Getting Started
 
-Do `make dev` to build and run the containerized applications with the local env variables. Automatically runs the migrations on your database.
+Do `make up` to build and run the containerized applications with the local env variables. Automatically runs the migrations on your database.
 Do `make tail` after the containers are running in order to see log output
 
 Goto `http://localhost:8080/` in your browser to see the running app (includes front end, back end, and database)!
