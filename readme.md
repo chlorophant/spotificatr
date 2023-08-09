@@ -1,3 +1,7 @@
+# NOTE:
+**This project has not been maintained for several years, and likely has succumbed to "code rot" aka doubtful that it will run.**
+
+
 # Take Home Code Test
 
 ### Project Requirements 
